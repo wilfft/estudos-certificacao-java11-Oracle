@@ -33,13 +33,15 @@ public class Produto {
         this.preco = preco;
     }
 
+    public Produto(Categoria categoria, String nome, BigDecimal preco) {
+        this.categoria = categoria;
+        this.nome = nome;
+        this.preco = preco;
+    }
+
     @Override
     public String toString() {
-        return "Lambda{" +
-                "categoria=" + categoria +
-                ", nome='" + nome + '\'' +
-                ", preco=" + preco +
-                '}';
+        return String.format("%-10s %-16s $ %6.2f", categoria, nome, preco);
     }
 
     @Override
