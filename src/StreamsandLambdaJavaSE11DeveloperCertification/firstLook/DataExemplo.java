@@ -14,7 +14,10 @@ public class DataExemplo {
             new Produto(ROUPA, "blusa de frio", new BigDecimal(4.99)),
             new Produto(COMIDA, "Bolacha Passatempo", new BigDecimal(5.99)),
             new Produto(ROUPA, "Tenix Nike shox", new BigDecimal(2.99)),
-            new Produto(BRINQUEDO, "Nerf", new BigDecimal(3.99))
+            new Produto(BRINQUEDO, "Hot wells", new BigDecimal(3.99)),
+               new Produto(COMIDA, "Arroz", new BigDecimal(5.99)),
+            new Produto(ROUPA, "Calça Jean", new BigDecimal(2.99)),
+            new Produto(BRINQUEDO, "Lego", new BigDecimal(3.99))
 
 
     );
