@@ -29,10 +29,7 @@ public class FiltrandoTransformandoStreams {
 
         lista.stream()
                 .flatMap(e -> pattern.splitAsStream(e.getNome()))
-                .forEach(System.out::println)
-
-
-        ;
+                .forEach(System.out::println)      ;
 
     }
 
