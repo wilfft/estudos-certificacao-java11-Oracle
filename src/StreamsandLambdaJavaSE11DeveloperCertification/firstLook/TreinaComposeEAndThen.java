@@ -47,6 +47,16 @@ public class TreinaComposeEAndThen {
         achaProdutoInformado(produtos, contemNome).map(combinaFunction)
                 .ifPresentOrElse(System.out::println,
                         () -> System.out.println("Produto nao ecnontrado"));
+
+
+        Predicate<Produto> produtoEspecifico = e -> Categoria.COMIDA == e.getCategoria();
+
+
+        Predicate<Produto> barato = e -> e.getPreco().compareTo(valorLimite) < 0;
+
+        achaProdutoInformado(produtos, produtoEspecifico.and(barato)).ifPresentOrElse(System.out::println,
+                () -> System.out.println("nao encontrado"));
+
     }
 
 
