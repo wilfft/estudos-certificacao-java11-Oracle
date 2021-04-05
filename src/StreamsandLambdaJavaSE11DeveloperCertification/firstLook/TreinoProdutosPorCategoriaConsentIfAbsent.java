@@ -1,4 +1,4 @@
 package StreamsandLambdaJavaSE11DeveloperCertification.firstLook;
 
-public class TreinaProdutosPorCategoriaComFor {
+public class TreinoProdutosPorCategoriaConsentIfAbsent {
 }
